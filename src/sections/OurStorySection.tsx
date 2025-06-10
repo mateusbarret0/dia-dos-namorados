@@ -1,7 +1,6 @@
-// src/sections/OurStorySection.tsx
-import React from "react";
-import { Box, Container, Typography, Paper } from "@mui/material";
-import fotoPrimeiroDate from "../assets/fotoPrimeiroDate.jpg";
+import React from 'react';
+import { Box, Container, Typography, Paper } from '@mui/material';
+import fotoPrimeiroDate from '../assets/img/fotoPrimeiroDate.jpg';
 
 const OurStorySection: React.FC = () => {
   return (
@@ -10,25 +9,24 @@ const OurStorySection: React.FC = () => {
         <Typography
           variant="h2"
           textAlign="center"
-          sx={{ mb: 8, fontSize: "3rem" }}
+          sx={{ mb: 8, fontSize: '3rem' }}
         >
           O Início de Tudo
         </Typography>
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
+            display: 'flex',
+            alignItems: 'center',
             gap: 4,
-            flexDirection: { xs: "column", md: "row" },
+            flexDirection: { xs: 'column', md: 'row' },
           }}
         >
-          {/* Item 1 */}
-          <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+          <Box sx={{ width: { xs: '100%', md: '50%' } }}>
             <Paper elevation={3} sx={{ p: 4 }}>
               <Typography
                 variant="h4"
                 component="h3"
-                sx={{ mb: 2, color: "text.primary" }}
+                sx={{ mb: 2, color: 'text.primary' }}
               >
                 Quem diria...
               </Typography>
@@ -44,14 +42,13 @@ const OurStorySection: React.FC = () => {
             </Paper>
           </Box>
 
-          {/* Item 2 */}
           <Box
             component="img"
             src={fotoPrimeiroDate}
-            alt="fotoPrimeiroDate"
+            alt=""
             sx={{
-              width: { xs: "100%", md: "50%" },
-              height: "auto",
+              width: { xs: '100%', md: '50%' },
+              height: 'auto',
               borderRadius: 2,
               boxShadow: 5,
             }}
